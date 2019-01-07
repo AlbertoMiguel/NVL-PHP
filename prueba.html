@@ -4,57 +4,23 @@
 <meta charset="utf-8">
 <title></title>
 <link href="Final-css.css" rel="stylesheet" type="text/css" media="screen">
+<script src="./Librerias/jquery-3.3.1.js">
+	
+	$( document ).ready(function() {
+   $( "a" ).click(function( event ) {
+       alert( "Hola Mundo" );
+       event.preventDefault();
+   });
+});
+</script>
 </head>
 
 <body>
 
-<?php   
-	int $numero;
-if($numero > 0 && <=7){
-	switch ($numero) {
-		case '1':
-			echo "Es Lunes";
-			break;		
-		case '2':
-			echo "Es Martes";
-			break;
-		case '3':
-			echo "Es Miércoles";
-			break;
-		case '4':
-			echo "Es Jueves";
-			break;
-		case '5':
-			echo "Es Viernes";
-			break;
-		case '6':
-			echo "Es Sábado";
-			break;
-		case '7':
-			echo "Es Domingo";
-			break;
-	}else{
-		echo "El numero introducido es erroneo";
-	}
-
-}
+ 
 
 
-?>
+
 
 </body>
 </html>
-
-
-
-
- Crea un pequeño script que dependiendo del número que te pasen, digas el día de la semana que es, es decir:
-
-Si te pasan el 1 , imprimirás Lunes
-Si te pasan el 2, imprimirás Martes, y así sucesivamente.
-Si te ves suelto con funciones, crea una función que acepte dicho número como parámetro.
-
-Si no sabes mucho de eso llamado funciones, no te preocupes y simplemente define una variable con el número y luego pon el código debajo leyendo esa variable, es decir:
-
-$numero = 6;
-// aqui el código que leerá la variable $numero
